@@ -1,0 +1,152 @@
+:root
+{
+    /* Colors */
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+
+    /* font size */
+    --fs-100: 1rem;
+    --fs-200: 1.2rem;
+    --fs-300: 1.4rem;
+    --fs-400: 1.5rem;
+    --fs-500: 1.6rem;
+
+}
+
+*, *::before,*::after
+{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    width: 100%;
+}
+
+
+body
+{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--clr-pale-blue);
+    font-size: var(--fs-100);
+}
+
+main
+{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 25rem;
+    background-color: white;
+    color: var(--clr-desaturated-blue);
+}
+
+h1
+{
+    font-size: var(--fs-500);
+    color: var(--clr-dark-blue);
+}
+
+h2
+{
+    font-size: var(--fs-100);
+    color: var(--clr-dark-blue);
+}
+
+.header-img
+{
+   border-radius: 1rem 1rem 0 0;
+}
+
+.summary
+{
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.plan
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--clr-very-pale-blue);
+    padding: 1rem;
+    border-radius: 0.7rem;
+    
+}
+
+.plan > div
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.plan > div > div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.plan >  p
+{
+    color: var(--clr-bright-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.plan img
+{
+    width: 3rem;
+}
+
+.buttons
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.buttons button
+{
+ 
+    padding-block: 0.8rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    fill: none;
+    font-weight: 700;
+    color: var(--clr-desaturated-blue);
+    cursor: pointer;
+}
+
+.buttons > button:first-child
+{
+    background-color: var(--clr-bright-blue);
+    color: white;
+    font-weight: 700;
+    box-shadow: 1px 5px 10px var(--clr-pale-blue);
+}
+
+.order-info
+{
+    text-align: center;
+}
