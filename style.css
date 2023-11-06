@@ -114,6 +114,11 @@ h2
     cursor: pointer;
 }
 
+.plan > p:hover
+{
+    opacity: 0.5;
+}
+
 .plan img
 {
     width: 3rem;
@@ -148,6 +153,16 @@ h2
     color: white;
     font-weight: 700;
     box-shadow: 1px 5px 10px var(--clr-pale-blue);
+}
+
+.buttons > button:first-child:hover
+{
+    opacity: 0.5;
+}
+
+.buttons > button:last-child:hover
+{
+    color: var(--clr-dark-blue);
 }
 
 .order-info
